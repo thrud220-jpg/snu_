@@ -84,7 +84,7 @@ header.active .ham{
   height: 20px;
   cursor: pointer;
 }
-@media(max-width:500px){
+@media(max-width:550px){
   header h1 a{
   width: 160px;
   height: 40px;
