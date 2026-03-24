@@ -521,7 +521,9 @@
 .treat-list .swiper-slide dd{
   font-size: 2.1rem;
 }
-
+.treatment .swiper-pagination{
+    bottom: 40px;
+}
 }
 @media(max-width:768px){
   .tre-tit{
