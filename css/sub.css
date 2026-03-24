@@ -330,6 +330,7 @@ nav{
   background: url(../images/sub/reservation_bg.png) no-repeat center;
 }
 
+
 /*sub2*/
 .breadcrumbs .sub2_ul{
     background-color: #fff;
@@ -352,6 +353,9 @@ nav{
   .breadcrumbs .sub2_ul{
   top: 43px;
 }
+#sub-con .inner{
+  padding: 0 0px;
+}
 }
 @media(max-width:768px){
 .breadcrumbs .sub2_ul{
@@ -362,6 +366,7 @@ nav{
 }
 }
 @media(max-width:396px){
+
 .breadcrumbs .sub2_ul{
   top: 49px;
 }
@@ -567,6 +572,11 @@ nav{
 .form1{
   display: none;
 }
+@media(max-width:1200px){
+  #download h2{
+  padding-top: 0px;
+}
+}
 @media(max-width:1024px){
   #download h2{
   font-size: 2rem;
@@ -579,7 +589,7 @@ nav{
 
 #download h2{
   font-size: 1.8rem;
-  padding-top: 100px;
+  padding-top: 0px;
   padding-bottom: 60px;
 }
 #download .form-wrap{
@@ -608,7 +618,7 @@ nav{
 @media(max-width:396px){
 #download h2{
   font-size: 1.5rem;
-  padding-top: 70px;
+  padding-top: 0px;
   padding-bottom: 0px;
 }
 #download .form-wrap{

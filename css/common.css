@@ -85,12 +85,16 @@ header.active .ham{
   cursor: pointer;
 }
 @media(max-width:500px){
+  header h1 a{
+  width: 160px;
+  height: 40px;
+}
   header.active h1 a{
   width: 160px;
   height: 40px;
 }
 }
-@media(max-width:390px){
+@media(max-width:450px){
   header.active h1 a{
   display: block;
   width: 70px;
