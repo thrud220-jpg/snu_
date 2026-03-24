@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/*aritadotum*/
+
+@font-face {
+    font-family: 'Aritadotum';
+    src: url(../font/AritaDotumKR-Thin.woff2) format('woff');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Aritadotum';
+    src: url(../font/AritaDotumKR-Light.woff2) format('woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Aritadotum';
+    src: url(../font/AritaDotumKR-Medium.woff2) format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Aritadotum';
+    src: url(../font/AritaDotumKR-SemiBold.woff2) format('woff');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Aritadotum';
+    src: url(../font/AritaDotumKR-Bold.woff2) format('woff');
+    font-weight: 700;
+}
+
+/*amandine*/
+
+@font-face {
+    font-family: 'Amandine';
+    src: url(../font/fonnts.com-Amandine_Light.otf) format('woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Amandine';
+    src: url(../font/fonnts.com-Amandine_Regular.otf) format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Amandine';
+    src: url(../font/fonnts.com-Amandine_Medium.otf) format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Amandine';
+    src: url(../font/fonnts.com-Amandine_Bold.otf) format('woff');
+    font-weight: 700;
+}
+
+

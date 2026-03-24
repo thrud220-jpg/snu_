@@ -1,0 +1,421 @@
+@charset "utf-8";
+
+:root{
+  --main-font: "Aritadotum", sans-serif;
+  --sub-font: "Amandine", serif; 
+  --main-color : #2F8435;
+  --sub-color : #205029;
+}
+
+/*공통*/
+body{
+  font-family: var(--main-font);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #272727;
+  
+}
+
+#wrap{
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.inner{
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+/*header*/
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+header .inner{
+  max-width: 1700px;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header h1 a{
+  display: block;
+  width: 225px;
+  height: 60px;
+  background: url(../images/common/logo.png) no-repeat center / 100%;
+}
+header.active h1 a{
+  display: block;
+  width: 225px;
+  height: 60px;
+  background: url(../images/common/logo_green.png)no-repeat center / 100%;
+}
+
+header .ham{
+  font-size: 0;
+  color: transparent;
+  background: url(../images/common/ham.svg) no-repeat right / 100%;
+  width: 50px;
+  height: 20px;
+  cursor: pointer;
+}
+
+header.active .ham{
+  background: url(../images/common/ham_green.svg) no-repeat right / 100%;
+  width: 50px;
+  height: 20px;
+  cursor: pointer;
+}
+
+@media(max-width:390px){
+  header.active h1 a{
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: url(../images/common/logo_g.png)no-repeat center / 100%;
+}
+  header h1 a{
+  width: 70px;
+  height: 70px;
+  background: url(../images/common/logo_w.png) no-repeat center / 100%;
+}
+}
+
+/*gnb*/
+.gnb-wrap{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 130px 180px;
+}
+
+.gnb-close{
+  background: url(../images/common/gnb-close.svg) no-repeat center / cover;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  position: absolute;
+  top: 60px;
+  right: 110px;
+}
+
+.gnb{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+
+.gnb > li > a{
+  display: block;
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.depth2{
+  padding-top: 30px;
+}
+.depth2 li{
+  padding-top: 10px;
+}
+.depth2 li a{
+  display: block;
+  font-weight: 500;
+  font-size: 2.4rem;
+  color: #fff;
+  opacity: 0.6;
+  transition: opacity 0.5s;
+  white-space: nowrap;
+}
+.depth2 li:hover a{
+  opacity: 1;
+}
+
+
+
+@media(max-width:1550px){
+  .gnb-wrap{
+  padding: 150px 150px;
+}
+ .gnb{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.gnb > li > a{
+  font-size: 2.5rem;
+}
+.depth2 li a{
+  font-size: 1.8rem;
+}
+}
+#fp-nav ul li a span{
+  background-color: #fff;
+}
+
+@media(max-width:1200px){
+  .gnb-wrap{
+  padding: 150px 80px;
+}
+.gnb{
+  gap: 20px;
+}
+}
+
+@media(max-width:950px){
+  .gnb > li > a{
+  font-size: 2rem;
+}
+.depth2 li a{
+  font-size: 1.6rem;
+}
+.depth2{
+  padding-top: 15px;
+}
+.gnb-close{
+  right: 40px;
+}
+
+}
+
+@media(max-width:800px){
+.gnb-wrap{
+  padding: 100px 80px;
+  overflow-y: auto;
+}
+.gnb-close{
+  width: 35px;
+  height: 35px;
+}
+
+.gnb{
+ display: block;
+}
+
+.gnb > li > a{
+  display: block;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #fff;
+  white-space: nowrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gnb > li > a.l1{
+  border-top: 0px;
+}
+
+.depth2{
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.depth2 li{
+  padding-top: 10px;
+}
+.depth2 li a{
+  font-size: 2rem;
+}
+}
+
+
+@keyframes mousescroll{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(25px);
+  }
+}
+
+.scroll{
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  transform: translateX(-50%);
+  z-index: 9;
+}
+
+.scroll .stroke{
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 25px;
+  height: 45px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+.scroll .ball{
+  position: absolute;
+  top: 35px;
+  left: calc(50% - 4px);
+  display: block;
+  width: 8px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: mousescroll 1.2s infinite;
+}
+
+@media(max-width:500px){
+  .scroll{
+  transform: scale(0.8);
+  left: 45%;
+}
+
+header .ham{
+  width: 40px;
+  height: 20px;
+}
+}
+
+#fp-nav.active ul li a span{
+  background-color: #2D6033;
+}
+#fp-nav.active ul li .fp-tooltip{
+  color: #2D6033;
+}
+
+@media(max-width: 1024px){
+  #fp-nav{
+    display: none !important;
+  }
+}
+
+/*footer*/
+footer{
+  background-color: #2D6033;
+  color: #fff;
+}
+footer .inner{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+#fp-nav ul li:last-child a span{
+  display: none;
+}
+.f-logo{
+  width: 210px;
+  height: 58px;
+  margin-top: 30px;
+} 
+.f-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.f-link{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 40px;
+}
+.copy{
+  padding-top: 12px;
+  padding-bottom: 25px;
+}
+.copy br{
+  display: none;
+}
+address{
+  padding-top: 45px;
+}
+address ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+address ul li a{
+  font-size: 16px;
+  font-weight: 500;
+}
+.f-right{
+  margin-top: 55px;
+  position: relative;
+  padding-right: 20px;
+  white-space: nowrap;
+}
+.f-right ul{
+  background-color: #fff;
+  color: #205029;
+  padding: 10px 24px;
+  z-index: 9;
+  position: absolute;
+  transform: translate(-5px, 5px);
+  white-space: nowrap;
+  cursor: pointer;
+}
+.f-right ul li{
+  padding-top: 5px;
+}
+
+.f-right ul li a{
+  font-weight: 600;
+}
+.f-right span{
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
+  transform: translate(145px, -18px) rotate(-45deg);
+  position: absolute;
+  left: 20px;
+}
+.f-right span.active{
+  transform: translate(145px, -14px) rotate(135deg);
+}
+
+
+@media(max-width: 768px){
+  
+}
+@media(max-width: 550px){
+  .f-logo{
+    width: 135px;
+    height: 35px;
+  }
+  address ul li a{
+    font-size: 1.2rem;
+  }
+  .f-link{
+    padding-top: 20px;
+    gap: 10px;
+  }
+  .f-link li a{
+    font-size: 1.1rem;
+  }
+  .f-right{
+    font-size: 1.1rem; 
+    margin-top: 45px;
+  }
+  .copy{
+    font-size: 1.1rem;
+  }
+  .f-right span{
+    position: absolute;
+    left: -25px;
+    top: 19px;
+  }
+}
