@@ -19,7 +19,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   filter: brightness(80%);
 }
@@ -330,7 +330,7 @@
 .guide-wrap ul{
   display: block;
   margin-bottom: 250px; 
-  margin-top: 20px;
+  margin-top: 0px;
 }
 .guide-wrap li{
   width: calc((100% - 140px) / 3);
@@ -383,6 +383,9 @@
 }
 .guide{
   background-position: center bottom 100px;
+}
+.guide-wrap ul{
+  margin-top: 60px;
 }
 }
 
@@ -570,7 +573,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 140px;
+  bottom: 80px;
   top: auto;
 }
 
@@ -582,7 +585,7 @@
 }
 @media (max-width:768px){
 .reservation .inner{
-  margin-bottom: 0px;
+  margin-bottom: 70px;
 }
 .re_consult{
   transform: scale(0.8);
@@ -596,7 +599,7 @@
 .re_consult{
   transform: scale(0.7);
   left: 32%;
-  bottom: 150px;
+  bottom: 120px;
 }
 }
 
@@ -763,7 +766,7 @@ br.br1{
   .an_consult{
   position: absolute;
   left: 39%;
-  top: 75%;
+  top: 85%;
   transform: scale(0.8);
 }
 }

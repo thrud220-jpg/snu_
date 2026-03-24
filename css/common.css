@@ -26,6 +26,17 @@ body{
   margin: 0 auto;
 }
 
+@media (max-width: 1200px){
+  .section{
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  .section:first-child{
+    min-height: 100vh !important;
+  }
+}
+
 /*header*/
 header{
   width: 100%;
@@ -174,6 +185,9 @@ header.active .ham{
 }
 .gnb{
   gap: 20px;
+}
+.inner{
+  padding: 150px 0;
 }
 }
 

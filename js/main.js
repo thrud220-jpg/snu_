@@ -6,6 +6,8 @@ $(document).ready(function(){//실행시작
     navigationTooltips: ['서울대 동물병원', '진료원칙', '진료안내', '진료과목', '진료예약' ,'모집공고', '오시는 길'],
     navigationPosition: 'right',
     showActiveTooltip: true,
+    responsiveWidth: 1200,
+  
 
      onLeave: function (origin, destination, nextIndex, direction) {
         if (destination == 2 |destination == 3| destination == 4 | destination == 5 | destination == 6 | destination == 6 |destination == 7) {
